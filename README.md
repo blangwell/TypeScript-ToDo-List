@@ -100,7 +100,7 @@ checkUserStatus(userName, userId, userIsAdmin);
 
 Neat, tidy and correct code. All thanks to TypeScript!!! While this is great, it's hardly a real world application of the power TypeScript can give you in development.
 
-Let's push on and see what we can do in a front-end library. Since we've been working with React so far, fork and clone [this repo](https://) and `npm i`.
+Let's push on and see what we can do in a front-end library. Since we've been working with React so far, fork and clone this repo and `npm i`.
 
 We'll be making a nice, little todo list to show how TypeScript can work in tandem with React.
 
