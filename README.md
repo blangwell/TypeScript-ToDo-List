@@ -46,7 +46,7 @@ You can view the TypeScript docs [here](https://www.typescriptlang.org/).
 ## Example
 In your terminal, make a directory called `typescript-sandbox` and `npm init -y`. We're going to play around with some of the basics before moving into a full codealong.
 
-Once, you've done this, `touch index.ts` and we can begin having some fun.
+Once you've done this, `cd` into `typescript-sandbox` and run `tsc --init`. This will create a `tsconfig.json` which contains all of our necessary TypeScript configurations. Finally, `touch index.ts` and we can begin having some fun.
 
 Inside your `index.ts`, include the following code.
 
