@@ -121,7 +121,7 @@ Use Workspace version
 ```
 ### Updating our files and file structure
 
-Let's look at our `App.tsx`. Inside we can see that four components are named in comments. Looking at our file structure, we can probably determine that `Header` and `Footer` should, most likely, be added to our `Layout` folder, while List and Modal should be added to `Componnents`. Let's add these files to each of those folders.
+Let's look at our `App.tsx`. Inside we can see that four components are named in comments. Looking at our file structure, we can probably determine that `Header` and `Footer` should, most likely, be added to our `Layout` folder, while List and Modal should be added to `Components`. Let's add these files to each of those folders.
 
 ### Creating Layout Content
 
@@ -173,7 +173,7 @@ and inside `App.tsx` include:
 ```
 import { Footer, Header } from './layout';
 ```
-Now you can uncomment each inside yur return statement and view them in your browser!
+Now you can uncomment each inside your return statement and view them in your browser!
 
 ### Implement the List component
 
@@ -284,7 +284,7 @@ export default function ListItem(props: ListItemProps) {
             <p className="content content--one list__text">
                 {displayDate}
             </p>
-            <p className="content content--one list__test"</p>
+            <p className="content content--one list__text">
                 {props.toDo.name}
             </p>
         </span>
@@ -318,7 +318,7 @@ export default function Modal(props) {
       <div className="modal modal--active">
       </div>
     )
-}l
+};
 ```
 Now, inside our return statement we can include the following:
 ```
@@ -329,7 +329,7 @@ Now, inside our return statement we can include the following:
             Add to list
         </p>
         <span className="modal__form modal__form__field">
-            <p classname="content content--two">
+            <p className="content content--two">
                 Item name:
             </p>
             <input 
@@ -396,7 +396,7 @@ In `App.tsx` we can do this. We can also write a function that will allow us to 
 ```
 <!-- we write our function and pass it to Modal -->
 const addNewToDo = (newToDo: ToDo) => {
-    setToDos(toDos => [...toDos, newTodo]);
+    setToDos(toDos => [...toDos, newToDo]);
 };
 ...
 <Modal addNewToDo={addNewToDo} />
@@ -502,7 +502,7 @@ What is `updateToDo`? It's a new function that needs to be written in `App.tsx`.
 
 ```
 const updateTodos = (toDoIndex: number) => {
-    let tempTodos = [...ToDos];
+    let tempToDos = [...ToDos];
     tempToDos[toDoIndex].complete = !tempToDos[toDoIndex].complete
     setToDos(newToDos);
 }
